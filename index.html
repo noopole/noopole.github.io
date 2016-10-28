@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Import type ES6</title>
+    <script>
+    console.log( "hello" )
+    </script>
+</head>
+<body>
+    <h3>Test ES6 Module Loader</h3>
+
+    <button id=B1 >default export form inside</button>
+    <button id=B2 >name export from outside</button>
+
+    <div id="output"></div>
+    <script type="module">
+    import y from "./submodule.js"
+    </script>
+
+    <script>
+        B2.onclick = function ()
+        {
+            console.info( e1() )
+            output.innerHTML = "e1()=" + e1() 
+        } 
+    </script>
+
+</body>
+</html>
