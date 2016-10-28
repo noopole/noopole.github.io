@@ -2,9 +2,6 @@
 <html>
 <head>
     <title>Import type ES6</title>
-    <script>
-    console.log( "hello" )
-    </script>
 </head>
 <body>
     <h3>Test ES6 Module Loader</h3>
@@ -14,8 +11,22 @@
 
     <div id="output"></div>
     <script type="module">
-    import x from "./mymodule.js"
-    
+        //default export
+	    import x from './mymodule.js'
+
+	    //named export
+        import {e1} from './mymodule.js'
+
+        console.info( "module loaded")
+
+        //made global for extrnal use
+	    window.e1 = e1
+        
+        B1.onclick = function () 
+        {
+            console.info( x.func( 1 ) )
+            output.innerHTML = "x.func(1) =" + x.func( 1 )
+        }
     </script>
 
     <script>
