@@ -1,7 +1,6 @@
 console.log( 'main module' )
 
-//import y from './submodule.js'
-var y = 2 
+import y from './submodule.js'
 
 export default {
     prop: 100,

@@ -1,2 +1,2 @@
 export default 10 
-console.log( 'loaded' )
+console.log( 'sub module' )
