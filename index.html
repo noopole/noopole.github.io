@@ -12,15 +12,15 @@
     <div id="output"></div>
     <script type="module">
         //default export
-	    import x from './mymodule.js'
+	import x from './mymodule.js'
 
-	    //named export
+	//named export
         import {e1} from './mymodule.js'
 
         console.info( "module loaded")
 
         //made global for extrnal use
-	    window.e1 = e1
+	window.e1 = e1
         
         B1.onclick = function () 
         {
